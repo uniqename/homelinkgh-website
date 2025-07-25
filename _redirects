@@ -1,1 +1,30 @@
+<<<<<<< HEAD
 /*    /index.html   200
+=======
+# Netlify redirects for HomeLinkGH website
+
+# Privacy policy redirects for App Store compliance
+/privacy-policy /privacy.html 200
+/privacy /privacy.html 200
+/privacy.html /privacy.html 200
+
+# Ensure clean URLs work
+/privacy-policy/ /privacy.html 200
+
+# Terms of service
+/terms-of-service /terms.html 200
+/terms /terms.html 200
+
+# Support page redirects
+/support /support.html 200
+/help /support.html 200
+
+# Account deletion page redirects (App Store requirement)
+/account/delete /account-deletion.html 200
+/account/deletion /account-deletion.html 200
+/delete-account /account-deletion.html 200
+/data-deletion /account-deletion.html 200
+
+# Root redirects
+/ /index.html 200
+>>>>>>> a03eec9f92f7cc7de546588bc06ae759a261f76a
