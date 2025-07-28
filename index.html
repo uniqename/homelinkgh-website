@@ -12,16 +12,16 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     
-    <title>HomeLinkGH - AI-Powered Smart Services for Ghana</title>
-    <meta name="description" content="Ghana's smartest service platform with AI recommendations, gamification, and personalized experiences. Food delivery, home services, and more with intelligent matching across Greater Accra.">
-    <meta name="keywords" content="Ghana food delivery, diaspora services, Greater Accra, home services, restaurant delivery">
+    <title>HomeLinkGH - Home Services & Food Delivery in Ghana</title>
+    <meta name="description" content="Professional home services and food delivery across Greater Accra. Trusted providers for cleaning, repairs, food delivery, and more serving Ghana's communities.">
+    <meta name="keywords" content="Ghana home services, food delivery, Greater Accra, cleaning services, repairs, trusted providers">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="HomeLinkGH - Ghana's Premier Food Delivery & Home Services">
-    <meta property="og:description" content="Connecting diaspora with trusted local services across Greater Accra">
+    <meta property="og:title" content="HomeLinkGH - Professional Home Services Ghana">
+    <meta property="og:description" content="Trusted home services and food delivery across Greater Accra, Ghana">
     <meta property="og:image" content="https://homelinkgh.com/og-image.jpg">
     <meta property="og:url" content="https://homelinkgh.com">
     
@@ -149,8 +149,8 @@
             border: 2px solid white;
         }
         
-        /* Features Section */
-        .features {
+        /* Services Section */
+        .services {
             padding: 80px 0;
             background: #f8f9fa;
         }
@@ -163,13 +163,13 @@
             color: #2E8B57;
         }
         
-        .features-grid {
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
         
-        .feature-card {
+        .service-card {
             background: white;
             padding: 2rem;
             border-radius: 15px;
@@ -178,51 +178,41 @@
             transition: transform 0.3s;
         }
         
-        .feature-card:hover {
+        .service-card:hover {
             transform: translateY(-5px);
         }
         
-        .feature-icon {
+        .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #FF6B35, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #2E8B57;
         }
         
-        .feature-card h3 {
+        .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #2E8B57;
         }
         
-        /* Services Section */
-        .services {
+        /* Coverage Section */
+        .coverage {
             padding: 80px 0;
+            background: white;
         }
         
-        .services-grid {
+        .coverage-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
+            margin-top: 2rem;
         }
         
-        .service-item {
-            background: linear-gradient(135deg, #2E8B57, #3CB371);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
+        .coverage-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .service-item:hover {
-            transform: scale(1.05);
-        }
-        
-        .service-item i {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            border-left: 4px solid #2E8B57;
         }
         
         /* App Download Section */
@@ -265,6 +255,16 @@
         
         .download-btn:hover {
             background: rgba(255,255,255,0.3);
+        }
+        
+        /* Ghana Flag Colors Accent */
+        .ghana-accent {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background: linear-gradient(to bottom, #CE1126 33%, #FCD116 33%, #FCD116 66%, #006B3C 66%);
+            border-radius: 3px;
+            margin-left: 10px;
         }
         
         /* Footer */
@@ -312,12 +312,6 @@
             opacity: 0.8;
         }
         
-        /* Social Media Icons */
-        .social-icons a:hover {
-            color: #FFA500 !important;
-            transform: translateY(-2px);
-        }
-        
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -333,16 +327,6 @@
                 align-items: center;
             }
         }
-        
-        /* Ghana Flag Colors Accent */
-        .ghana-accent {
-            display: inline-block;
-            width: 30px;
-            height: 20px;
-            background: linear-gradient(to bottom, #CE1126 33%, #FCD116 33%, #FCD116 66%, #006B3C 66%);
-            border-radius: 3px;
-            margin-left: 10px;
-        }
     </style>
 </head>
 <body>
@@ -357,6 +341,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#coverage">Coverage</a></li>
                 <li><a href="#app">Download</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -366,15 +351,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>🤖 Ghana's Smartest AI-Powered Services Platform 🇬🇭</h1>
-            <p>Revolutionary AI recommendations, gamification rewards, and personalized experiences!</p>
-            <p><strong>"AI That Learns You, Services That Delight You"</strong></p>
-            
-            <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 15px; margin: 2rem 0;">
-                <h3 style="margin-bottom: 1rem;">🚀 NEW: v4.2.0 - Enterprise Features Live!</h3>
-                <p style="margin-bottom: 1rem;">📸 Real file uploads → 💰 Live pricing → 📋 Quote management → 🔔 Push notifications</p>
-                <p style="margin-bottom: 0;"><strong>✨ Production-ready with enterprise-grade infrastructure!</strong></p>
-            </div>
+            <h1>🏠 Professional Home Services for Ghana 🇬🇭</h1>
+            <p>Connecting you with trusted, verified service providers across Greater Accra</p>
+            <p><strong>Food Delivery • Home Services • Reliable & Professional</strong></p>
             
             <div class="cta-buttons">
                 <a href="#app" class="btn btn-primary">
@@ -382,131 +361,9 @@
                     Get the App
                 </a>
                 <a href="#services" class="btn btn-secondary">
-                    <i class="fas fa-utensils"></i>
-                    Browse Services
+                    <i class="fas fa-list"></i>
+                    View Services
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">🤖 Revolutionary AI-Powered Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>🧠 AI Personalization</h3>
-                    <p>Advanced AI learns your personality (Explorer, Premium Seeker, Budget Conscious, Efficiency Focused) and personalizes everything for you</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>🎮 Gamification Rewards</h3>
-                    <p>Earn points, unlock achievements, level up (7 levels), and get real rewards! Turn service booking into an engaging game</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-magic"></i>
-                    </div>
-                    <h3>🎯 Smart Recommendations</h3>
-                    <p>8 types of AI recommendations: Perfect timing, trending services, smart combos, weather-based, and more!</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>💰 Smart Pricing</h3>
-                    <p>Dynamic pricing with automatic discounts, deals, loyalty rewards, and money-saving suggestions in Ghana Cedis (GH₵)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Smart Features Highlight Section -->
-    <section style="padding: 80px 0; background: linear-gradient(135deg, #1a1a1a, #2d2d2d); color: white;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">🤖 Revolutionary AI Experience</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
-                    <h3 style="color: #4CAF50; margin-bottom: 1rem;">Smart Personalization</h3>
-                    <p>AI learns your personality type and adapts the entire experience to your preferences and habits.</p>
-                </div>
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎮</div>
-                    <h3 style="color: #FF9800; margin-bottom: 1rem;">Gamification System</h3>
-                    <p>Earn points, unlock 10+ achievements, progress through 7 levels, and get real rewards!</p>
-                </div>
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
-                    <h3 style="color: #2196F3; margin-bottom: 1rem;">Smart Notifications</h3>
-                    <p>11 types of intelligent notifications sent at perfect times based on your behavior patterns.</p>
-                </div>
-            </div>
-            <div style="text-align: center; background: rgba(76, 175, 80, 0.1); padding: 2rem; border-radius: 15px; border: 2px solid #4CAF50;">
-                <h3 style="color: #4CAF50; margin-bottom: 1rem;">🚀 The Future of Service Booking is Here</h3>
-                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Experience Ghana's first AI-powered service platform that gets smarter with every interaction</p>
-                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                    <div style="background: #4CAF50; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem;">✨ Habit Learning</div>
-                    <div style="background: #FF9800; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem;">🎯 Predictive Suggestions</div>
-                    <div style="background: #2196F3; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem;">💰 Dynamic Pricing</div>
-                    <div style="background: #9C27B0; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem;">🏆 Achievement System</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ghana Card Verification Priority Section -->
-    <section style="padding: 80px 0; background: linear-gradient(135deg, #006B3C, #FCD116); color: white;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">🇬🇭 Ghana Card Verification Priority</h2>
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <p style="font-size: 1.3rem; margin-bottom: 2rem;"><strong>Priority verification for all users including Ghana diaspora</strong></p>
-                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                    <div style="background: rgba(255,255,255,0.2); padding: 20px 30px; border-radius: 15px; text-align: center;">
-                        <div style="font-size: 2rem; margin-bottom: 10px;">🏆</div>
-                        <h4 style="margin: 0; font-size: 1.1rem;">Priority Option</h4>
-                        <p style="margin: 5px 0 0 0; font-weight: bold;">Ghana Card</p>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; text-align: center;">
-                        <div style="font-size: 2rem; margin-bottom: 10px;">🪪</div>
-                        <h4 style="margin: 0; font-size: 1.1rem;">Fallback Option</h4>
-                        <p style="margin: 5px 0 0 0;">Driver's License</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🇬🇭</div>
-                    <h3 style="color: #FFD700; margin-bottom: 1rem;">Ghana Card Priority</h3>
-                    <p>Ghana Card verification takes absolute priority for all users, including diaspora members, ensuring authentic Ghanaian identity verification</p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏅</div>
-                    <h3 style="color: #FFD700; margin-bottom: 1rem;">Enhanced Trust Score</h3>
-                    <p>Ghana Card verified users receive significantly higher trust scores, priority service access, and better provider matching</p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
-                    <h3 style="color: #FFD700; margin-bottom: 1rem;">Diaspora Connection</h3>
-                    <p>Ghanaians abroad can verify with Ghana Card first, strengthening their connection to home and accessing premium local services</p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
-                    <h3 style="color: #FFD700; margin-bottom: 1rem;">Fallback System</h3>
-                    <p>Only when Ghana Card is unavailable, driver's license serves as alternative verification with standard access privileges</p>
-                </div>
             </div>
         </div>
     </section>
@@ -514,183 +371,103 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Our Premium Services</h2>
+            <h2 class="section-title">Our Services</h2>
             <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-utensils"></i>
-                    <h3>🍽️ Enhanced Food Delivery</h3>
-                    <p>Dynamic customization, quantity selection, pre-order communication, 10-minute response guarantee, restaurant location with Google Maps integration</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Delivery</h3>
+                    <p>Fast and reliable food delivery from your favorite local restaurants. Fresh meals delivered to your door with real-time tracking.</p>
                 </div>
                 
-                <div class="service-item">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>🛒 Advanced Grocery Shopping</h3>
-                    <p>Location-specific shopping for 9 major Ghana areas, dynamic grocery lists with "add more" functionality, product specifications, payment negotiation</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Grocery Shopping</h3>
+                    <p>Personal grocery shopping service. We shop for your essentials and deliver them fresh to your home or office.</p>
                 </div>
                 
-                <div class="service-item">
-                    <i class="fas fa-tshirt"></i>
-                    <h3>👔 Advanced Laundry Service</h3>
-                    <p>Pickup and delivery scheduling, service type selection (Regular, Express, Dry Cleaning, Ironing), cost estimation based on weight</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Laundry Service</h3>
+                    <p>Professional laundry and dry cleaning with pickup and delivery. Regular wash, express service, and specialized cleaning available.</p>
                 </div>
                 
-                <div class="service-item">
-                    <i class="fas fa-cut"></i>
-                    <h3>💅 Professional Beauty Services</h3>
-                    <p>Detailed nail tech and makeup artist profiles, social media integration, portfolio showcase, service-specific pricing and specializations</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Beauty Services</h3>
+                    <p>Professional beauty services at your location. Experienced nail technicians, makeup artists, and beauty specialists.</p>
                 </div>
                 
-                <div class="service-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>🔧 Home Services</h3>
-                    <p>Plumbing, electrical work, repairs, gardening, painting with verified professional providers</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Home Repairs</h3>
+                    <p>Trusted professionals for plumbing, electrical work, painting, and general home maintenance. Licensed and insured.</p>
                 </div>
                 
-                <div class="service-item">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>👥 Dynamic Provider Profiles</h3>
-                    <p>Service-specific provider cards, verification badges, trust scores, real-time response indicators</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Cleaning Services</h3>
+                    <p>Residential and office cleaning services. Regular housekeeping, deep cleaning, and post-construction cleanup available.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Detailed Features Section -->
-    <section style="padding: 80px 0; background: #f8f9fa;">
+    <!-- Coverage Section -->
+    <section class="coverage" id="coverage">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #2E8B57;">🌟 Revolutionary Service Features</h2>
+            <h2 class="section-title">Areas We Serve</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                Professional services across 9 major areas in Ghana
+            </p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #FF6B35; margin-bottom: 1rem;">🍽️ Enhanced Food Delivery</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✅ Dynamic product customization with quantity selection</li>
-                        <li style="margin-bottom: 0.5rem;">💬 Pre-order communication system to prevent disloyalty</li>
-                        <li style="margin-bottom: 0.5rem;">⚡ 10-minute response guarantee</li>
-                        <li style="margin-bottom: 0.5rem;">📍 Restaurant location with Google Maps integration</li>
-                    </ul>
+            <div class="coverage-grid">
+                <div class="coverage-item">
+                    <h4>Accra</h4>
+                    <p>Central Business District</p>
                 </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #4CAF50; margin-bottom: 1rem;">🛒 Advanced Grocery Shopping</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">📍 Location-specific shopping for 9 major Ghana areas</li>
-                        <li style="margin-bottom: 0.5rem;">➕ Dynamic grocery lists with "add more" functionality</li>
-                        <li style="margin-bottom: 0.5rem;">📋 Product specifications and quantity selection</li>
-                        <li style="margin-bottom: 0.5rem;">💰 Payment negotiation system</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Tema</h4>
+                    <p>Industrial & Residential</p>
                 </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #2196F3; margin-bottom: 1rem;">👔 Advanced Laundry Service</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">📅 Pickup and delivery scheduling with time management</li>
-                        <li style="margin-bottom: 0.5rem;">🎯 Service type selection (Regular, Express, Dry Cleaning, Ironing)</li>
-                        <li style="margin-bottom: 0.5rem;">⚖️ Cost estimation based on weight</li>
-                        <li style="margin-bottom: 0.5rem;">📱 Real-time tracking and updates</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Kasoa</h4>
+                    <p>Growing Communities</p>
                 </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #E91E63; margin-bottom: 1rem;">💅 Professional Beauty Services</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">👤 Detailed nail tech and makeup artist profiles</li>
-                        <li style="margin-bottom: 0.5rem;">📱 Social media integration and portfolio showcase</li>
-                        <li style="margin-bottom: 0.5rem;">💰 Service-specific pricing and specializations</li>
-                        <li style="margin-bottom: 0.5rem;">⭐ Customer reviews and ratings system</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Madina</h4>
+                    <p>Suburban Areas</p>
                 </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #FF9800; margin-bottom: 1rem;">👥 Dynamic Provider Profiles</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">🎯 Service-specific provider cards</li>
-                        <li style="margin-bottom: 0.5rem;">✅ Verification badges and trust scores</li>
-                        <li style="margin-bottom: 0.5rem;">🟢 Real-time response indicators</li>
-                        <li style="margin-bottom: 0.5rem;">📊 Performance metrics and ratings</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Adenta</h4>
+                    <p>Residential Districts</p>
                 </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <h3 style="color: #9C27B0; margin-bottom: 1rem;">🇬🇭 Ghana Card Priority System</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">🏆 Prioritized Ghana Card verification (including diaspora)</li>
-                        <li style="margin-bottom: 0.5rem;">🪪 Driver's license as fallback when Ghana Card unavailable</li>
-                        <li style="margin-bottom: 0.5rem;">📈 Enhanced trust score system</li>
-                        <li style="margin-bottom: 0.5rem;">🌍 Diaspora connection strengthening</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Kumasi</h4>
+                    <p>Ashanti Region</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advanced Features Section - v4.2.0 -->
-    <section style="padding: 80px 0; background: linear-gradient(135deg, #1a1a1a, #2d2d2d); color: white;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 1rem; font-size: 2.5rem; color: #FFD700;">🚀 NEW: Advanced Platform Features v4.2.0</h2>
-            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.2rem; opacity: 0.9;">Production-ready enterprise features now live!</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div style="background: linear-gradient(135deg, #FF6B35, #FFA500); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📸</div>
-                    <h3 style="color: white; margin-bottom: 1rem; font-weight: 700;">Real File Upload System</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left;">
-                        <li style="margin-bottom: 0.5rem;">📱 Camera and gallery integration</li>
-                        <li style="margin-bottom: 0.5rem;">🖼️ Multiple image selection and preview</li>
-                        <li style="margin-bottom: 0.5rem;">📏 Auto-compression and optimization</li>
-                        <li style="margin-bottom: 0.5rem;">🗑️ File management and removal</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Takoradi</h4>
+                    <p>Western Region</p>
                 </div>
-                
-                <div style="background: linear-gradient(135deg, #2E8B57, #3CB371); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
-                    <h3 style="color: white; margin-bottom: 1rem; font-weight: 700;">Live Pricing API System</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left;">
-                        <li style="margin-bottom: 0.5rem;">🇬🇭 Ghana-specific market rates</li>
-                        <li style="margin-bottom: 0.5rem;">⚡ Real-time pricing calculations</li>
-                        <li style="margin-bottom: 0.5rem;">🔄 Smart fallback mechanisms</li>
-                        <li style="margin-bottom: 0.5rem;">📊 Urgency and location multipliers</li>
-                    </ul>
+                <div class="coverage-item">
+                    <h4>Tamale</h4>
+                    <p>Northern Region</p>
                 </div>
-                
-                <div style="background: linear-gradient(135deg, #9C27B0, #E1BEE7); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📋</div>
-                    <h3 style="color: white; margin-bottom: 1rem; font-weight: 700;">Provider Quote Management</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left;">
-                        <li style="margin-bottom: 0.5rem;">📝 Comprehensive 3-tab dashboard</li>
-                        <li style="margin-bottom: 0.5rem;">⏰ Quote validity and tracking</li>
-                        <li style="margin-bottom: 0.5rem;">💰 Earnings and analytics display</li>
-                        <li style="margin-bottom: 0.5rem;">🔔 Smart follow-up system</li>
-                    </ul>
-                </div>
-                
-                <div style="background: linear-gradient(135deg, #4CAF50, #8BC34A); padding: 2rem; border-radius: 15px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔔</div>
-                    <h3 style="color: white; margin-bottom: 1rem; font-weight: 700;">Push Notifications System</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left;">
-                        <li style="margin-bottom: 0.5rem;">📱 Firebase-powered notifications</li>
-                        <li style="margin-bottom: 0.5rem;">🎯 Quote update alerts</li>
-                        <li style="margin-bottom: 0.5rem;">📨 Service reminders</li>
-                        <li style="margin-bottom: 0.5rem;">⚡ Instant communication</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="text-align: center; background: rgba(255,215,0,0.1); padding: 2rem; border-radius: 15px; border: 2px solid #FFD700;">
-                <h3 style="color: #FFD700; margin-bottom: 1rem;">🎯 Why These Features Matter</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                    <div>
-                        <strong style="color: #FFD700;">For Customers:</strong><br>
-                        Real photos, instant pricing, live updates
-                    </div>
-                    <div>
-                        <strong style="color: #FFD700;">For Providers:</strong><br>
-                        Professional dashboard, automated alerts, earnings tracking
-                    </div>
-                    <div>
-                        <strong style="color: #FFD700;">For Platform:</strong><br>
-                        Enterprise-grade infrastructure, production reliability
-                    </div>
+                <div class="coverage-item">
+                    <h4>Cape Coast</h4>
+                    <p>Central Region</p>
                 </div>
             </div>
         </div>
@@ -700,14 +477,7 @@
     <section class="app-download" id="app">
         <div class="container">
             <h2>Download HomeLinkGH App</h2>
-            <p>Available on iOS and Android - Coming soon to app stores!</p>
-            
-            <div style="text-align: center; margin: 2rem 0;">
-                <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 15px 25px; border-radius: 15px; margin-bottom: 1rem;">
-                    <h3 style="margin: 0; color: #FFD700;">🎨 New App Icon Design</h3>
-                    <p style="margin: 10px 0 0 0;">Lighter green/yellow Ghana-focused design with <strong style="background: #FFD700; color: #006B3C; padding: 3px 8px; border-radius: 8px;">QUICK</strong> service badge</p>
-                </div>
-            </div>
+            <p>Available for iOS and Android - Coming soon to app stores!</p>
             
             <div class="download-buttons">
                 <a href="mailto:info@homelinkgh.com?subject=iOS App Access Request" class="download-btn">
@@ -719,10 +489,6 @@
                     Request Android Access
                 </a>
             </div>
-            
-            <p style="margin-top: 2rem; opacity: 0.9;">
-                <strong>Serving 9 Major Ghana Areas:</strong> Accra • Tema • Kasoa • Madina • Adenta • Kumasi • Takoradi • Tamale • Cape Coast
-            </p>
         </div>
     </section>
 
@@ -732,39 +498,23 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>HomeLinkGH</h3>
-                    <p>Connecting Ghana's diaspora with trusted local services across Greater Accra.</p>
+                    <p>Professional home services and food delivery across Greater Accra, Ghana.</p>
                     <div style="margin-top: 1rem;">
-                        <i class="fas fa-envelope"></i> info@homelinkgh.com<br>
-                        <i class="fas fa-phone"></i> +233 (0) 555 0123<br>
-                        <i class="fas fa-map-marker-alt"></i> Greater Accra, Ghana
-                    </div>
-                    <div style="margin-top: 1.5rem;">
-                        <h4 style="color: #FFA500; margin-bottom: 0.5rem;">Follow Us</h4>
-                        <div class="social-icons" style="display: flex; gap: 1rem;">
-                            <a href="https://instagram.com/homelinkgh" target="_blank" style="color: white; font-size: 1.5rem; transition: color 0.3s;" title="Follow us on Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://linkedin.com/company/homelinkgh" target="_blank" style="color: white; font-size: 1.5rem; transition: color 0.3s;" title="Connect on LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://twitter.com/homelinkgh" target="_blank" style="color: white; font-size: 1.5rem; transition: color 0.3s;" title="Follow us on Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://facebook.com/homelinkgh" target="_blank" style="color: white; font-size: 1.5rem; transition: color 0.3s;" title="Like us on Facebook">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </div>
+                        <p><i class="fas fa-envelope"></i> info@homelinkgh.com</p>
+                        <p><i class="fas fa-phone"></i> +233 (0) 555 0123</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Greater Accra, Ghana</p>
                     </div>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#services">Enhanced Food Delivery</a></li>
-                        <li><a href="#services">Advanced Grocery Shopping</a></li>
-                        <li><a href="#services">Advanced Laundry Service</a></li>
-                        <li><a href="#services">Professional Beauty Services</a></li>
-                        <li><a href="#services">Dynamic Provider Profiles</a></li>
+                        <li><a href="#services">Food Delivery</a></li>
+                        <li><a href="#services">Grocery Shopping</a></li>
+                        <li><a href="#services">Laundry Service</a></li>
+                        <li><a href="#services">Beauty Services</a></li>
+                        <li><a href="#services">Home Repairs</a></li>
+                        <li><a href="#services">Cleaning Services</a></li>
                     </ul>
                 </div>
                 
@@ -774,7 +524,6 @@
                         <li><a href="mailto:info@homelinkgh.com">About Us</a></li>
                         <li><a href="mailto:careers@homelinkgh.com">Careers</a></li>
                         <li><a href="mailto:partners@homelinkgh.com">Partners</a></li>
-                        <li><a href="mailto:info@homelinkgh.com">Blog</a></li>
                         <li><a href="mailto:press@homelinkgh.com">Press</a></li>
                     </ul>
                 </div>
@@ -782,25 +531,24 @@
                 <div class="footer-section">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="mailto:support@homelinkgh.com">Help Center</a></li>
-                        <li><a href="mailto:info@homelinkgh.com">Contact Us</a></li>
-                        <li><a href="mailto:legal@homelinkgh.com">Privacy Policy</a></li>
-                        <li><a href="mailto:legal@homelinkgh.com">Terms of Service</a></li>
-                        <li><a href="mailto:providers@homelinkgh.com">Become a Provider</a></li>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="mailto:support@homelinkgh.com">Contact Support</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="account-deletion.html">Account Deletion</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 HomeLinkGH. All rights reserved. | Proudly serving Ghana's diaspora community 🇬🇭</p>
+                <p>&copy; 2025 HomeLinkGH. All rights reserved. | Proudly serving Ghana 🇬🇭</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Enhanced smooth scrolling for navigation links
+        // Smooth scrolling for navigation links
         document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for all anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -822,13 +570,6 @@
                 
                 button.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0) scale(1)';
-                });
-                
-                button.addEventListener('click', function() {
-                    this.style.transform = 'translateY(0) scale(0.98)';
-                    setTimeout(() => {
-                        this.style.transform = 'translateY(-2px) scale(1.02)';
-                    }, 150);
                 });
             });
 
@@ -852,41 +593,7 @@
                     ticking = true;
                 }
             });
-
-            // Add loading animation
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.5s ease-in-out';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-
-            // Enhanced service cards interaction
-            document.querySelectorAll('.service-item, .feature-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-8px) scale(1.02)';
-                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.2)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                    this.style.boxShadow = this.classList.contains('feature-card') ? 
-                        '0 5px 15px rgba(0,0,0,0.1)' : 'none';
-                });
-            });
         });
-
-        // Email link enhancement
-        function openEmailClient(subject) {
-            const email = 'info@homelinkgh.com';
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-            window.location.href = mailtoLink;
-        }
-
-        // Add click tracking for analytics (placeholder)
-        function trackClick(eventName, properties = {}) {
-            console.log('Event:', eventName, properties);
-            // Add analytics tracking here when ready
-        }
     </script>
 </body>
 </html>
