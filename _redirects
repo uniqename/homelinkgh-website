@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/*    /index.html   200
-=======
 # Netlify redirects for HomeLinkGH website
 
 # Privacy policy redirects for App Store compliance
@@ -27,4 +24,3 @@
 
 # Root redirects
 / /index.html 200
->>>>>>> a03eec9f92f7cc7de546588bc06ae759a261f76a
